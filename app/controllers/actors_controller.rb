@@ -12,7 +12,7 @@ class ActorsController < ApplicationController
 			flash[:errors] = actor.errors.full_messages
 			redirect_to "/actors/new"
 		end
-		
+    end
 	def show
 
 	end
@@ -21,3 +21,4 @@ class ActorsController < ApplicationController
 		params.require(:actor).permit(:first_name, :last_name)
 	end
 end
+
