@@ -12,6 +12,8 @@ class ActorsController < ApplicationController
 			flash[:errors] = actor.errors.full_messages
 			redirect_to "/actors/new"
 		end
+		
+	def show
 
 	end
 	private
